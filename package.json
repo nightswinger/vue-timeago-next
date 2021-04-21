@@ -1,0 +1,33 @@
+{
+  "name": "vue-timeago-next",
+  "version": "0.1.0",
+  "description": "A timeago component for Vue 3.0",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/vue-timeago-next.umd.js",
+  "module": "./dist/vue-timeago-next.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/vue-timeago-next.es.js",
+      "require": "./dist/vue-timeago-next.umd.js"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "timeago.js": "^4.0.2"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^1.2.1",
+    "@vitejs/plugin-vue-jsx": "^1.1.3",
+    "@vue/compiler-sfc": "^3.0.5",
+    "typescript": "^4.1.3",
+    "vite": "^2.1.5",
+    "vue": "^3.0.5",
+    "vue-tsc": "^0.0.24"
+  }
+}
